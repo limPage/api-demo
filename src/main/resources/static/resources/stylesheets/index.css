@@ -1,0 +1,179 @@
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+body>header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color:rgba(53,103,184,0.47);
+
+    font-family: inherit;
+
+
+
+    font-weight: 700;
+    color: rgba(0,0,0,0.9);
+
+}
+body>header>h1{
+    padding: 0.5rem;
+    margin: 1rem ;
+    color: white;
+    border-radius: 0.5rem;
+
+    background: linear-gradient(to bottom, #3498db 0%, #2e86c1 40%, #2874a6 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+    text-shadow: 0.125rem 0.125rem 0.125rem black;
+
+}
+
+body>header>.spring{
+    flex: 1;
+}
+body>header>.charge{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    margin: 0.5rem;
+
+
+}
+
+body>main.map-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+body>main.map-wrap>.map-container#map {
+    flex: 1;
+    position: relative;
+    z-index: 2;
+}
+
+
+body>main.map-wrap>.map-container#map > .cover {
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(234, 236, 238, 100);
+    color: rgb(86, 101, 115);
+    font-size: 1.25rem;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+
+
+body > .map-wrap > .map-container > div > div > div > div {
+    border-radius: 0.5rem;
+
+
+}
+
+
+body > .map-wrap > .map-container > div > div > div > div > div {
+    font-family: inherit;
+    padding: 1rem;
+    font-weight: 700;
+
+
+}
+
+
+body>.map-wrap>.map-container>.hAddr {
+    position: absolute;
+
+    width: 100%;
+    z-index: 999;
+}
+
+body>.map-wrap>.map-container>.hAddr>#centerAddr {
+    display: block;
+    margin-top: 0.125rem;
+    font-weight: bold;
+    position: absolute;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 0.1rem;
+    padding: 0.5rem;
+    border: solid 0.0625rem black;
+
+
+}
+
+.bAddr {
+    padding: 0.3125rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+body>.map-wrap>section.bottom{
+
+    background-color:rgba(53,103,184,0.47);
+    text-shadow: 0.0625rem 0.0625rem 0.125rem white;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.9);
+    padding: 0.5rem;
+}
+body>.map-wrap>section.bottom>#myLocation{
+    background-color: white;
+    display: inline-block;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin: 0 0 0.5rem 0;
+
+}
+
+body>.map-wrap>section>.button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+body>.map-wrap>section>.button-container>input[type="button"]:first-of-type{
+    margin-right: 0.5rem;
+}
+
+
+body>.map-wrap>section>.button-container>input[type="button"]{
+    width: 50%;
+    padding:2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.125rem 0.125rem 0.125rem black;
+    border: solid 0.1625rem #6495ED;
+    border-radius: 0.5rem;
+    /*background-image: linear-gradient(to right, #1a48c0,white);*/
+    background: linear-gradient(to bottom, #3498db 0%, #2e86c1 40%, #2874a6 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+    background-blend-mode: multiply;
+
+
+
+}
