@@ -1,4 +1,4 @@
-# api-demo
+# MAP API-demo
 
 api를 이용해서 만든 데모 프로젝트입니다. https://api.alllim.dev 로 이동하실 수 있습니다.<br/>
 <br/>
