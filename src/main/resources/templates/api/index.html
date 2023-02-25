@@ -5,17 +5,14 @@
     <title>: : API DEMO : :</title>
 
 
-    <script type="text/javascript"
+
+    <script  type="text/javascript"
             src="//dapi.kakao.com/v2/maps/sdk.js?appkey=5d6c3b4be03cd33c06d662d2a6af5e71&libraries=services"></script>
-    <script defer th:src="@{/resources/api/scripts/common.js}"></script>
-    <script defer th:src="@{/resources/api/scripts/index.js}"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" th:href="@{/resources/stylesheets/common.css}">
-    <link rel="stylesheet" th:href="@{/resources/stylesheets/index.css}">
-
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/common.css?ver=1}">
+    <link rel="stylesheet" th:href="@{/resources/stylesheets/index.css?ver=1}">
+    <script defer th:src="@{/resources/api/scripts/common.js?ver=1}"></script>
+    <script defer th:src="@{/resources/api/scripts/index.js?ver=1}"></script>
 
 </head>
 <body>
@@ -26,8 +23,8 @@
     <div class="charge">
         <span id="charging">(charging state unknown)</span>
         <span id="level">(battery level unknown)</span>
-        <span id="dischargingTime">(discharging time unknown)</span>
-        <span id="time">현재시간</span>
+<!--        <span id="dischargingTime">(discharging time unknown)</span>-->
+        <span id="time">time</span>
 
     </div>
 
@@ -50,7 +47,7 @@
 <!--        <span>공유하고자 하는 위치를 클릭 후 공유버튼을 누르시면 됩니다.</span>-->
         <p id="myLocation"></p>
         <div class="button-container">
-        <input type="button" value="위치 공유" id="share">
+        <input type="button" value="선택 위치 공유" id="share">
 
         <input type="button" value="내 위치 보기" id="find-me">
         </div>

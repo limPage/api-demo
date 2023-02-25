@@ -22,7 +22,7 @@ btn.addEventListener('click', async () => {
             +'\n'+(window.document.querySelector('.street-address')?window.document.querySelector('.street-address').innerText:''
                 )
         ,
-        url: 'https://www.google.co.kr/maps/place/'+locationHref
+        url: '\thttps://map.kakao.com/link/map/공유 위치,'+locationHref
     }
 
     try {

@@ -3,7 +3,7 @@ window.onload = function () {
     function updateBatteryStatus(battery) {
         document.querySelector('#charging').textContent ="배터리 상태 : "+ (battery.charging ? '충전중' : '충전중아님');
         document.querySelector('#level').textContent ="배터리 잔량 : "+ battery.level *100 +"%";
-        document.querySelector('#dischargingTime').textContent = "남은 배터리 시간 : "+ battery.dischargingTime / 60;
+        // document.querySelector('#dischargingTime').textContent = "남은 배터리 시간 : "+ battery.dischargingTime / 60;
     }
 
     navigator.getBattery().then(function(battery) {
@@ -35,7 +35,7 @@ function time() {
     // let milliseconds = today.getMilliseconds(); // 밀리초
 
 
-    window.document.getElementById('time').innerText = '현재시간 : '+(hours< 10 ? '0' : '')+ hours + ':' +(minutes< 10 ? '0' : '')+ minutes + ':' +(seconds< 10 ? '0' : '')+ seconds;
+    window.document.getElementById('time').innerText = 'time : '+(hours< 10 ? '0' : '')+ hours + ':' +(minutes< 10 ? '0' : '')+ minutes + ':' +(seconds< 10 ? '0' : '')+ seconds;
 
 
 }

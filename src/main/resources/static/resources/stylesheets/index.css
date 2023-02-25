@@ -18,7 +18,8 @@ body>header{
 
     font-weight: 700;
     color: rgba(0,0,0,0.9);
-
+    box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.2);
+    z-index: 999;
 }
 body>header>h1{
     padding: 0.5rem;
@@ -38,6 +39,8 @@ body>header>.spring{
 body>header>.charge{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     background-color: white;
 
     border-radius: 0.5rem;
@@ -57,6 +60,7 @@ body>main.map-wrap {
 }
 
 body>main.map-wrap>.map-container#map {
+
     flex: 1;
     position: relative;
     z-index: 2;
@@ -138,6 +142,8 @@ body>.map-wrap>section.bottom{
     font-weight: 700;
     color: rgba(0,0,0,0.9);
     padding: 0.5rem;
+    box-shadow: 0 0 1rem 0.5rem rgba(0,0,0,0.2);
+    z-index: 999;
 }
 body>.map-wrap>section.bottom>#myLocation{
     background-color: white;
@@ -168,7 +174,7 @@ body>.map-wrap>section>.button-container>input[type="button"]{
     cursor: pointer;
     color: white;
     text-shadow: 0.125rem 0.125rem 0.125rem black;
-    border: solid 0.1625rem #6495ED;
+    border: solid 0.1625rem rgba(0,0,0,0.3);
     border-radius: 0.5rem;
     /*background-image: linear-gradient(to right, #1a48c0,white);*/
     background: linear-gradient(to bottom, #3498db 0%, #2e86c1 40%, #2874a6 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
